@@ -3,19 +3,30 @@ import { useEffect, useState } from "react";
 
 export default function AdminLeaves() {
   const [leaves, setLeaves] = useState([]);
+  const API_URL ="https://employee-leave-attendance-mgmt-backend-7.onrender.com"
 
   const loadLeaves = async () => {
-    const res = await axios.get("http://localhost:5000/api/admin/leaves");
+    const token = localStorage.getItem("token");
+  
+    const res = await axios.get(
+      `${API_URL}/api/admin/leaves`,
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      }
+    );
+  
     setLeaves(res.data.leaves);
-     
   };
+  
 
 useEffect(() => {
     loadLeaves();
 }, []);
 
   const updateStatus = (id, status) => {
-    axios.put(`http://localhost:5000/api/admin/leave/${id}`, { status })
+    axios.put(`${API_URL}/api/admin/leave/${id}`, { status })
       .then(loadLeaves);
   };
 
