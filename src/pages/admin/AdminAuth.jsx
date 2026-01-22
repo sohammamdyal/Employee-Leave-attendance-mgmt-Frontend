@@ -2,7 +2,7 @@ import { useState } from "react";
 import { loginAdmin, registerAdmin } from "../../services/adminAuthService";
 import "./../../styles/AdminAuth.css";
 import { Link } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
 export default function AdminAuth() {
   const [isSignup, setIsSignup] = useState(false);
   const [image, setImage] = useState(null);
@@ -13,6 +13,8 @@ export default function AdminAuth() {
     password: "",
     role: "admin",
   });
+
+  const navigate = useNavigate();
 
   const imageHandler = (e) => {
     const file = e.target.files[0];
@@ -43,7 +45,8 @@ export default function AdminAuth() {
         localStorage.setItem("token", res.token);
         sessionStorage.setItem("adminData", JSON.stringify(res.admin));
         alert("Admin logged in");
-        window.location.href = "/addmindashboard";
+       
+        navigate("/addmindashboard");
       }
     } catch (error) {
       alert(error.response?.data?.message || "Something went wrong");

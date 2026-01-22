@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { registerUser, loginUser } from "./../services/authService";
-
+import { useNavigate } from "react-router-dom";
 export default function AuthPage() {
   const [adminSignup, setAdminSignup] = useState(false);
   const [empSignup, setEmpSignup] = useState(false);
@@ -17,6 +17,8 @@ export default function AuthPage() {
     password: "",
   });
 
+  const navigate = useNavigate();
+
   const handleAdmin = async () => {
     if (adminSignup) {
       await registerUser({ ...admin, role: "admin" });
@@ -24,7 +26,8 @@ export default function AuthPage() {
       setAdminSignup(false);
     } else {
       const res = await loginUser(admin);
-      window.location.href="/dashboard";
+    
+      navigate("/dashboard");
       localStorage.setItem("token", res.data.token);
       alert("Admin Logged In");
     }
@@ -37,7 +40,8 @@ export default function AuthPage() {
       setEmpSignup(false);
     } else {
       const res = await loginUser(employee);
-      window.location.href="/profile";
+
+      navigate("/profile");
       localStorage.setItem("token", res.data.token);
       alert("Employee Logged In");
     }

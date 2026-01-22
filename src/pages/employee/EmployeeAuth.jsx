@@ -2,7 +2,7 @@ import { useState } from "react";
 import { registerUser, loginUser } from "../../services/authService";
 import "./../../styles/EmpAuth.css";
 import { Link } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
 export default function EmployeeAuth() {
   const [isSignup, setIsSignup] = useState(false);
   const [image, setImage] = useState(null);
@@ -14,6 +14,7 @@ export default function EmployeeAuth() {
     role: "employee",
    
   });
+const navigate = useNavigate();  
 
   const imageHandler = (e) => {
     const file = e.target.files[0];
@@ -44,7 +45,8 @@ export default function EmployeeAuth() {
         localStorage.setItem("token", res.token);
         sessionStorage.setItem("userData", JSON.stringify(res.user));
         alert("Employee logged in");
-        window.location.href = "/empdashboard";
+       
+        navigate("/empdashboard");
       }
     } catch (error) {
       alert(error.response?.data?.message || "Something went wrong");
