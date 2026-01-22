@@ -1,0 +1,39 @@
+.attendance-container {
+    padding: 20px;
+  }
+  
+  .attendance-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .attendance-card select,
+  .attendance-card button {
+    margin-top: 10px;
+    padding: 8px;
+  }
+  
+  .attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .attendance-table th,
+  .attendance-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .present {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .absent {
+    color: red;
+    font-weight: bold;
+  }
+  

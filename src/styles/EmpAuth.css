@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .auth-container {
+    min-height: 100vh;
+    background: #f5f7fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image-upload input {
+    padding: 6px;
+  }
+  
+  .image-preview {
+    margin-top: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+  }
+  
+  .role-badge {
+    padding: 8px;
+    background: #e5e7eb;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: 600;
+  }
+  
+  
+  .auth-card {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  }
+  
+  .auth-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 28px;
+    color: #111827;
+  }
+  
+  .form-group {
+    margin-bottom: 18px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 13px;
+    color: #6b7280;
+    margin-bottom: 6px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .form-group input:focus {
+    border-color: #111827;
+  }
+
+  .role-input {
+    background-color: #f3f4f6;
+    color: #374151;
+    cursor: not-allowed;
+  }
+  
+  .role-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    background-color: #e5e7eb;
+    color: #111827;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  
+  
+  .auth-btn {
+    width: 100%;
+    padding: 10px;
+    background: #111827;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .auth-btn:hover {
+    background: #1f2937;
+  }
+  
+  .switch-text {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #6b7280;
+    cursor: pointer;
+  }
+  
+  .switch-text:hover {
+    color: #111827;
+  }
+
+  .admin-link {
+    margin-top: 14px;
+    text-align: center;
+    font-size: 13px;
+    color: #6b7280;
+  }
+  
+  .admin-link a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .admin-link a:hover {
+    text-decoration: underline;
+  }
+  
+  

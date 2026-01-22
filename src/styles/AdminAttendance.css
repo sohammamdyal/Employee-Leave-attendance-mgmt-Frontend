@@ -1,0 +1,55 @@
+.filter-bar {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    background: #ffffff;
+    padding: 14px 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+  }
+  
+  /* Dropdown */
+  .filter-select {
+    padding: 8px 12px;
+    min-width: 200px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .filter-select:focus {
+    border-color: #2563eb;
+  }
+  
+  /* Date input */
+  .filter-date {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .filter-date:focus {
+    border-color: #2563eb;
+  }
+  
+  /* Button */
+  .filter-btn {
+    padding: 8px 18px;
+    border-radius: 6px;
+    border: none;
+    background: #2563eb;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .filter-btn:hover {
+    background: #1d4ed8;
+  }
+  

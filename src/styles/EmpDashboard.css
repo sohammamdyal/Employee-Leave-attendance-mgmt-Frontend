@@ -1,0 +1,11 @@
+.emp-dashboard-layout {
+    min-height: 100vh;
+    background-color: #f2f2f2;
+  }
+  
+  /* main content */
+  .emp-dashboard-content {
+    margin-left: 260px;  
+    padding: 24px;
+  }
+  

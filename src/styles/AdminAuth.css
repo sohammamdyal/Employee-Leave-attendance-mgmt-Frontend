@@ -1,0 +1,116 @@
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f9fafb;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .auth-form {
+    width: 420px;
+    background: #ffffff;
+    padding: 40px 32px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  }
+  
+  .auth-form h2 {
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #111827;
+  }
+  
+  .form-group {
+    margin-bottom: 18px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 13px;
+    color: #6b7280;
+    margin-bottom: 6px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+    outline: none;
+  }
+
+  .role-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    background-color: #e5e7eb;
+    color: #111827;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  
+  .form-group input:focus {
+    border-color: #111827;
+  }
+  
+  .role-box {
+    background: #f3f4f6;
+    color: #374151;
+    font-size: 13px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin-bottom: 22px;
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  button {
+    width: 100%;
+    background: #111827;
+    color: #ffffff;
+    border: none;
+    padding: 11px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #1f2937;
+  }
+  
+  .switch {
+    margin-top: 22px;
+    text-align: center;
+    font-size: 13px;
+    color: #6b7280;
+    cursor: pointer;
+  }
+  
+  .switch:hover {
+    color: #111827;
+  }
+
+  .user-link {
+    margin-top: 14px;
+    text-align: center;
+    font-size: 13px;
+    color: #6b7280;
+  }
+  
+  .user-link a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .user-link a:hover {
+    text-decoration: underline;
+  }
+  
